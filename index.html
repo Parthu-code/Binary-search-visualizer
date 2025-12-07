@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Binary Search Algorithm Visualizer</h1>
+            <p>Watch how binary search works step by step</p>
+        </header>
+        
+        <div class="controls">
+            <div class="input-group">
+                <label for="targetInput">Target Number:</label>
+                <input type="number" id="targetInput" placeholder="Enter target number" min="1" max="100">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="animation-controls">
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+                <button id="stepBtn">Step</button>
+            </div>
+        </div>
+        
+        <div class="array-container">
+            <div class="array-label">Array:</div>
+            <div id="array" class="array"></div>
+        </div>
+        
+        <div class="info-panel">
+            <div class="current-step">
+                <h3>Current Step:</h3>
+                <p id="stepInfo">Click "Search" to start</p>
+            </div>
+            <div class="search-info">
+                <div class="info-item">
+                    <span class="label">Left:</span>
+                    <span id="leftIndex">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Right:</span>
+                    <span id="rightIndex">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Middle:</span>
+                    <span id="middleIndex">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Target:</span>
+                    <span id="targetValue">-</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="result">
+            <p id="resultText"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
